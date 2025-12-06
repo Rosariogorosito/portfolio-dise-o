@@ -1,0 +1,70 @@
+#animate-items {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+#nav-inicio {
+    margin-top: 1rem !important;
+}
+
+#links-nav {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    color: white !important;
+}
+
+#title-hero {
+    font-family: "Dela Gothic One", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.7rem;
+}
+
+#image-card-container {
+    height: 6rem;
+    width: 6rem;
+}
+
+#imagen-card {
+    height: 6rem;
+    width: 6rem;
+}
+
+#subtitle-hero {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400 !important;
+
+}
+
+#name-hero {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+#container-hero-titles {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#items-card-hero {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.6rem;
+}
+
+#text-rosario-hero {
+    font-family: "Dela Gothic One", sans-serif !important;
+    letter-spacing: -7px;
+}
+
+#about-me-text p{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+#about-me-text span{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800 !important;
+}
