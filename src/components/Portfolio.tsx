@@ -59,7 +59,7 @@ const Portfolio = () => {
               SELECTED<br /><span className="italic">WORKS</span>
             </h2>
           </div>
-          <p className="font-body text-background/70 text-lg max-w-md">
+          <p className="font-body text-background/70 text-lg max-w-md" id="subtitle-portfolio">
             Una selección de mis proyectos más recientes. Cada uno cuenta una historia única.
           </p>
         </div>

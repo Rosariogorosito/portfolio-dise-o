@@ -59,12 +59,31 @@
     letter-spacing: -7px;
 }
 
-#about-me-text p{
+#about-me-text p {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 600 !important;
 }
 
-#about-me-text span{
+#about-me-text span {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 800 !important;
+}
+
+
+#subtitle-portfolio,
+#contact-me-text {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+#text-contact {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#form-contact {
+    width: 90%;
+    justify-items: center;
 }

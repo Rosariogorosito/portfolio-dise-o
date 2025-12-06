@@ -50,47 +50,56 @@ const Contact = () => {
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-16 justify-items-center lg:justify-items-start">
           <div>
             <div className="inline-block bg-foreground text-background px-4 py-2 rounded-full font-body text-sm font-semibold mb-6">
               CONTACTO
             </div>
 
-            <h2 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.9] mb-8">
+            <h2 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.9] mb-5">
               LET'S CREATE<br />
               <span className="italic">SOMETHING</span><br />
               AMAZING
             </h2>
-
-            <p className="font-body text-foreground/80 text-xl max-w-md mb-12">
-              ¿Tienes un proyecto en mente? Me encantaría escucharlo y explorar cómo puedo ayudarte.
-            </p>
-
-            <div className="space-y-6">
-              <a href="mailto:rosariogorositodesign@gmail.com" className="flex items-center gap-4 group">
-                <div className="w-14 h-14 rounded-full bg-foreground text-background flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Mail size={20} />
-                </div>
-                <div>
-                  <p className="font-body text-sm text-foreground/60">Email</p>
-                  <p className="font-body text-lg font-semibold group-hover:text-orange transition-colors">
-                    rosariogorositodesign@gmail.com
-                  </p>
-                </div>
-              </a>
-
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full bg-foreground text-background flex items-center justify-center">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <p className="font-body text-sm text-foreground/60">Ubicación</p>
-                  <p className="font-body text-lg font-semibold">Bs.As, Argentina</p>
-                </div>
-              </div>
+            <div id="text-contact">
+              <p className="font-body text-foreground/80 text-xl max-w-md mb-4" id="contact-me-text">
+                ¿Tienes un proyecto en mente? Me encantaría escucharlo y explorar cómo puedo ayudarte.
+              </p>
             </div>
 
-            <div className="mt-12 flex gap-4">
+            <div
+              className="flex flex-col md:flex-row md:space-x-10 space-y-6 md:space-y-0"
+              id="container-info-contact"
+            >
+              <div className="flex flex-col space-y-6" id="container-info-contact">
+                <a href="mailto:rosariogorositodesign@gmail.com" className="flex items-start gap-4 group">
+                  <div className="w-14 h-14 rounded-full bg-foreground text-background flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Mail size={20} />
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="font-body text-sm text-foreground/60">Email</p>
+                    <p className="font-body text-lg font-semibold group-hover:text-orange transition-colors" >
+                      rosariogorositodesign@gmail.com
+                    </p>
+                  </div>
+                </a>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-foreground text-background flex items-center justify-center">
+                    <MapPin size={20} />
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="font-body text-sm text-foreground/60">Ubicación</p>
+                    <p className="font-body text-lg font-semibold">Bs.As, Argentina</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <div className="mt-6 flex gap-4">
               {[
                 { icon: () => <span className="font-bold"><i className="fa-brands fa-behance"></i></span>, label: "Behance" },
                 { icon: () => <span className="font-bold"> <i className="fa-brands fa-linkedin-in"></i></span>, label: "LinkedIn" },
@@ -106,10 +115,10 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-foreground text-background rounded-3xl p-8 md:p-12">
+          <div className="bg-foreground text-background rounded-3xl p-8 md:p-12" id="form-contact">
             <h3 className="font-display text-3xl mb-8">Escribime!</h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6" id="form-contact">
               <div>
                 <label className="font-body text-sm text-background/60 block mb-2">
                   Tu nombre

@@ -14,7 +14,7 @@ const About = () => {
               />
             </div>
 
-            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-orange rounded-full flex items-center justify-center transform rotate-12 animate-bounce-slow">
+            <div className="absolute -bottom-6 -right-3 w-32 h-32 bg-orange rounded-full flex items-center justify-center transform rotate-12 animate-bounce-slow">
               <span className="font-display text-foreground text-center text-sm leading-tight">
                 2+ AÑOS<br />EXP
               </span>
@@ -51,17 +51,17 @@ const About = () => {
             </div>
 
 
-            <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-background/20">
-              <div>
-                <p className="font-display text-5xl text-orange">20+</p>
+            <div className="grid grid-cols-3 gap-3 mt-12 pt-12 border-t border-background/20">
+              <div >
+                <p className="font-display text-4xl text-orange lg:text-5xl">20+</p>
                 <p className="font-body text-sm text-background/60 mt-1">Proyectos</p>
               </div>
               <div>
-                <p className="font-display text-5xl text-orange">15+</p>
+                <p className="font-display text-4xl text-orange lg:text-5xl">15+</p>
                 <p className="font-body text-sm text-background/60 mt-1">Clientes</p>
               </div>
               <div>
-                <p className="font-display text-5xl text-orange">100%</p>
+                <p className="font-display text-4xl text-orange lg:text-5xl">100%</p>
                 <p className="font-body text-sm text-background/60 mt-1">Pasión</p>
               </div>
             </div>
