@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -36,14 +36,12 @@
 
     --radius: 9999px;
 
-    /* Custom tokens */
     --pink: 326 100% 64%;
     --pink-dark: 326 100% 55%;
     --orange: 24 100% 50%;
     --yellow: 48 100% 50%;
     --lime: 75 100% 50%;
-    
-    /* Font families */
+
     --font-display: 'Anton', sans-serif;
     --font-body: 'Poppins', sans-serif;
   }
@@ -177,7 +175,6 @@
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -195,7 +192,6 @@
   background: hsl(var(--foreground) / 0.8);
 }
 
-/* Selection */
 ::selection {
   background: hsl(var(--foreground));
   color: hsl(var(--background));
