@@ -78,7 +78,7 @@ const Contact = () => {
                   </div>
                   <div className="flex flex-col">
                     <p className="font-body text-sm text-foreground/60">Email</p>
-                    <p className="font-body text-lg font-semibold group-hover:text-orange transition-colors" >
+                    <p className="font-body text-lg font-semibold group-hover:text-orange transition-colors whitespace-normal break-all sm:whitespace-nowrap" >
                       rosariogorositodesign@gmail.com
                     </p>
                   </div>
