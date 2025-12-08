@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Button } from "../components/ui/button";
 import { Mail, MapPin, Instagram, Send, ArrowUpRight } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faBehance } from "@fortawesome/free-brands-svg-icons";
+
 
 const Contact = () => {
   const { toast } = useToast();
@@ -72,10 +75,12 @@ const Contact = () => {
               id="container-info-contact"
             >
               <div className="flex flex-col space-y-6" id="container-info-contact">
-                <a href="mailto:rosariogorositodesign@gmail.com" className="flex items-start gap-4 group">
-                  <div className="w-14 h-14 rounded-full bg-foreground text-background flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Mail size={20} />
+
+                <a href="mailto:rosariogorositodesign@gmail.com" className="flex items-start gap-4 group ">
+                  <div className="w-14 h-14 rounded-full bg-foreground text-background flex items-center justify-center flex-shrink-0 self-start">
+                    <Mail className="w-5 h-5" />
                   </div>
+
                   <div className="flex flex-col">
                     <p className="font-body text-sm text-foreground/60">Email</p>
                     <p className="font-body text-lg font-semibold group-hover:text-orange transition-colors whitespace-normal break-all sm:whitespace-nowrap" >
@@ -93,6 +98,7 @@ const Contact = () => {
                     <p className="font-body text-lg font-semibold">Bs.As, Argentina</p>
                   </div>
                 </div>
+
               </div>
 
 
@@ -101,18 +107,31 @@ const Contact = () => {
 
             <div className="mt-6 flex gap-4">
               {[
-                { icon: () => <span className="font-bold"><i className="fa-brands fa-behance"></i></span>, label: "Behance" },
-                { icon: () => <span className="font-bold"> <i className="fa-brands fa-linkedin-in"></i></span>, label: "LinkedIn" },
+                {
+                  icon: faBehance,
+                  label: "Behance",
+                  href: "https://www.behance.net/rosariogorosito",
+                },
+                {
+                  icon: faLinkedinIn,
+                  label: "LinkedIn",
+                  href: "https://www.linkedin.com/in/rosario-gorosito/",
+                },
               ].map((social, index) => (
                 <a
                   key={index}
-                  href="www.linkedin.com/in/rosario-gorosito-3681742a7"
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-14 h-14 rounded-full border-2 border-foreground flex items-center justify-center hover:bg-foreground hover:text-background transition-all hover:scale-110"
                   aria-label={social.label}
                 >
+                  <FontAwesomeIcon icon={social.icon} className="text-2xl" />
                 </a>
               ))}
             </div>
+
+
           </div>
 
           <div className="bg-foreground text-background rounded-3xl p-8 md:p-12" id="form-contact">

@@ -1,4 +1,7 @@
 import { Instagram } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faBehance } from "@fortawesome/free-brands-svg-icons";
+
 
 const Navbar = () => {
   const navLinks = [
@@ -29,19 +32,21 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <a
-            href="www.linkedin.com/in/rosario-gorosito-3681742a7"
+            href="https://www.linkedin.com/in/rosario-gorosito/"
             target="_blank"
             className="w-12 h-12 rounded-full bg-foreground flex items-center justify-center text-background hover:scale-110 transition-transform"
             aria-label="Instagram"
+            id="icons-nav"
           >
-            <i className="fa-brands fa-linkedin-in"></i>
+            <FontAwesomeIcon icon={faLinkedinIn} className="text-xl" />
           </a>
           <a
             href="https://www.behance.net/rosariogorosito"
             className="w-12 h-12 rounded-full bg-foreground flex items-center justify-center text-background hover:scale-110 transition-transform font-bold text-lg"
             aria-label="Behance"
+            id="icons-nav"
           >
-            <i className="fa-brands fa-behance"></i>
+            <FontAwesomeIcon icon={faBehance} className="text-xl" />
           </a>
         </div>
       </div>

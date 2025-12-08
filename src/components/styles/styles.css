@@ -87,3 +87,7 @@
     width: 90%;
     justify-items: center;
 }
+
+#icons-nav {
+    color: white !important;
+}

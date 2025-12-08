@@ -1,6 +1,8 @@
 import designerPortrait from "../assets/imagen-card.jpeg";
 import "../App.css";
 import "./styles/styles.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
@@ -33,7 +35,9 @@ const Hero = () => {
               <div className="w-72 md:w-80 bg-orange rounded-3xl p-6 shadow-2xl border-4 border-foreground/10">
                 <div className="flex justify-between items-start mb-4">
                   <div className="w-10 h-10 rounded-full border-2 border-foreground flex items-center justify-center">
-                    <span className="text-lg"><i className="fa-solid fa-globe"></i></span>
+                    <span className="text-lg">
+                      <FontAwesomeIcon icon={faGlobe} className="w-5 h-5" />
+                    </span>
                   </div>
                   <div className="text-right text-xs font-body text-foreground/60">
                     <div>ID CARD</div>
