@@ -3,7 +3,8 @@ import { Button } from "../components/ui/button";
 import { Mail, MapPin, Instagram, Send, ArrowUpRight } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faBehance } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn, faBehance, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 
 
 const Contact = () => {
@@ -116,6 +117,11 @@ const Contact = () => {
                   icon: faLinkedinIn,
                   label: "LinkedIn",
                   href: "https://www.linkedin.com/in/rosario-gorosito/",
+                },
+                {
+                  icon: faWhatsapp,     
+                  label: "WhatsApp",
+                  href: "https://wa.me/3329548728", 
                 },
               ].map((social, index) => (
                 <a
