@@ -1,9 +1,9 @@
 import { useState } from "react";
 import projectBranding from "../assets/diseño-1.png";
 import projectWeb from "../assets/diseño-2.png";
-import projectSocial from "../assets/diseño-4.png";
-import projectApp from "../assets/diseño-3.png";
 import projectONG from "../assets/diseño-5.png";
+import projectNettar from "../assets/diseño-6.png";
+import projectRG from "../assets/diseño-7.png";
 
 const Portfolio = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
@@ -18,17 +18,24 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      title: "Nettar",
+      category: "Design / Social Media",
+      image: projectNettar,
+      color: "bg-lime",
+    },
+    {
+      id: 3,
       title: "Tatuador en Turín",
       category: "Web Design / UI",
       image: projectWeb,
       color: "bg-lime",
     },
-    {
-      id: 3,
-      title: "Clínica médica",
-      category: "Web Design / UI",
-      image: projectSocial,
-      color: "bg-yellow",
+        {
+      id: 4,
+      title: "RG - Gestión creativa",
+      category: "Design / Social Media",
+      image: projectRG,
+      color: "bg-lime",
     },
     {
       id: 5,
@@ -36,13 +43,6 @@ const Portfolio = () => {
       category: "Design web / UI",
       image: projectONG,
       color: "bg-lime",
-    },
-    {
-      id: 4,
-      title: "Alondra aromas",
-      category: "UI/UX / Mobile",
-      image: projectApp,
-      color: "bg-orange",
     },
 
   ];
